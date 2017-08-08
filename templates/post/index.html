@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste</title>
+</head>
+<body>
+{% for post in posts %}
+<h5><a href="{% url 'detail' id=post.id %}">{{ post.title }} </a></h5>
+<p>{{ post.content }}</p>
+{% endfor %}
+</body>
+</html>
